@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <script type="text/javascript" src="@Url.Content("~/wwwroot/libs.min.js")"></script>
+    
+    <link href="@Url.Content("~/wwwroot/libs.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/wwwroot/app.min.css")" rel="stylesheet" />
+    
+    <script>
+        var _rootUrl = '@Url.Content("~")';
+    </script>
+
+    <title>Home</title>
+</head>
+<body>
+    @RenderBody()
+    
+    <div id="_modal" class="modal"></div>
+    
+    <script type="text/javascript" src="@Url.Content("~/wwwroot/app.min.js")"></script>
+</body>
+</html>

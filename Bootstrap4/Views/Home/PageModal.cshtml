@@ -1,0 +1,5 @@
+﻿@model Bootstrap4.Models.ModalPageModel
+
+<h1>@Model.PageNumber</h1>
+
+<h4><a href="javascript:App.Modal.Open('/Home/Modal/@(Model.PageNumber+1)')">Go to @(Model.PageNumber+1)</a></h4>
